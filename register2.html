@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("bg2.jpg");
+            background-repeat:no-repeat ;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 15%;
+            left: 12%;
+            width: 400px;
+            height: 540px;
+            padding: 15px;
+            margin: 10px;
+            box-shadow: 0px 3px 15px black;
+            border-radius: 10px;
+            background-color: rgba(155, 184, 190,0.4);
+
+        }
+        .container h3{
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+            margin: 10px;
+        }
+        .form1{
+            position: absolute;
+            padding: 10px;
+            margin: 10px;
+            top: 90px;
+            left: 30px;
+            margin: 5px;
+
+
+
+        }
+        .form2{
+            position: absolute;
+            padding: 10px;
+            margin: 10px;
+            top:170px;
+            left: 30px;
+            margin: 5px;
+
+
+        }
+        .form1 label{
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container input{
+            width: 280px;
+            height: 35px;
+            border: white;
+            border-radius: 10px;
+            padding: 5px;
+            background: transparent;
+            color: blue     ;
+            border: black solid 1px;
+        }
+        #submit{
+            position: relative;
+            top: 315px;
+            left: 30px;
+            background-color: blue;
+            color: white;
+         font-size: 18px;
+         cursor: pointer;
+
+        }
+        .container a{
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            top: 320px;
+            left: 33px;
+            display: inline;
+
+        }
+        .social-media{
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            margin: 2px;
+            position: absolute;
+            top: 450px;
+            left: 60px;
+        }
+        i.fa-brands {
+            font-size: 28px;      
+            width: 20px;        
+            height: 20px;        
+            color: #000;         
+            margin-right: 25px;  
+            padding: 20px; 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <form>
+            <h3>Create Account </h3>
+            <div class="form1">
+            <label for="email" name="email">Email </label><br><br>
+            <input type="email" name="email" placeholder="Enter Email Address " maxlength="40"/>
+            <br>
+        </div>
+        
+        <div class="form2">
+            <label for="password" name="password">Password</label><br><br>
+            <input type="password" name="password" placeholder="Enter New Password " maxlength="20"/><br><br>
+            <input type="password" name="password" placeholder="Confirm Password " maxlength="20"/><br><br>
+            <label for="telephone" name="number">Phone Number</label><br>
+
+            <input type="telephone" name="number" placeholder="Enter Phone Number " maxlength="10"/><br>
+
+            <br>
+        </div>
+            <input id="submit" type="submit" value="Sign Up" /><br>
+            <a href="register.html" >Already have Account  </a><br>
+        </form>
+        <div class="social-media">
+            <i class="fa-brands fa-google"></i>
+             <i class="fa-brands fa-linkedin"></i>
+               <i class="fa-brands fa-facebook"></i>
+
+        </div>
+        
+    </div>
+    
+    <script src="https://kit.fontawesome.com/eb1382d598.js" crossorigin="anonymous"></script>
+</body>
+</html>

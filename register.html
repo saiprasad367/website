@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url('bg1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 20%;
+            right: 12%;
+            width: 400px;
+            height: 500px;
+            padding: 15px;
+            margin: 10px;
+            box-shadow: 0px 3px 15px black;
+            border-radius: 10px;
+            background: rgba(189, 189, 189,0.4);
+
+        }
+        .container h3{
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+            margin: 10px;
+        }
+        .form1{
+            position: absolute;
+            padding: 10px;
+            margin: 10px;
+            top: 90px;
+            left: 30px;
+            margin: 10px;
+
+
+
+        }
+        .form2{
+            position: absolute;
+            padding: 10px;
+            margin: 10px;
+            top:170px;
+            left: 30px;
+            margin: 10px;
+
+
+        }
+        .form1 label{
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container input{
+            width: 280px;
+            height: 35px;
+            border: black solid 1px;
+            border-radius: 10px;
+            padding: 5px;
+            background: transparent;
+            cursor: pointer;
+        }
+        #submit{
+            position: relative;
+            border: none;
+            top: 210px;
+            left: 30px;
+            background-color: blue;
+            color: white;
+         font-size: 18px;
+         cursor: pointer;
+
+        }
+        .container a{
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            top: 220px;
+            left: 33px;
+            display: inline;
+
+        }
+        .social-media{
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            margin: 2px;
+            position: absolute;
+            top: 150px;
+
+            left: 50px;
+        }
+        .social-media i{
+            width: 30px;
+            height: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+       
+        .full-container{
+            display: flex;
+            flex-direction: row;
+        }
+        .container-left{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 40%;
+            left: 10%;
+        }
+        .container-left h1{
+            font-size: 60px;
+            font-family: cursive;
+            color: blue;
+
+        }
+        .container-left h2{
+            font-size: 45px;
+            font-family: monospace;
+            animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+            width: fit-content;
+            white-space: nowrap;  
+            overflow: hidden; 
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: black; }
+        }       
+        .social-media {
+            position: absolute;
+            top: 350px;
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+            margin: 10px;
+        } 
+        i.fa-brands {
+            font-size: 28px;      
+            width: 20px;        
+            height: 20px;        
+            color: #000;         
+            margin-right: 25px;  
+            padding: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="full-container">
+
+        <div class="container-left">
+                <h2>Welcome To , </h2><br>
+                <h1>Xplota Soft...</h1><br>
+        </div>
+
+
+
+
+
+
+    <div class="container">
+        <form>
+            <h3>Log In </h3>
+            <div class="form1">
+            <label for="email" name="email">Email </label><br><br>
+            <input type="email" name="email" placeholder="Enter Email Address " maxlength="40"/>
+            <br>
+        </div>
+        
+        <div class="form2">
+            <label for="password" name="password">Password</label><br><br>
+            <input type="password" name="password" placeholder="Enter Password " maxlength="20"/><br>
+            <br>
+        </div>
+            <input id="submit" type="submit" value="Login" /><br>
+            <a href="#" >ForgotPassword?   </a><br>
+            <a href="register2.html" >CreateAccount</a>
+        </form>
+        <div class="social-media">
+           <i class="fa-brands fa-google"></i>
+             <i class="fa-brands fa-linkedin"></i>
+               <i class="fa-brands fa-facebook"></i>
+        </div>
+        
+    </div>
+
+</div>
+
+    <script src="https://kit.fontawesome.com/eb1382d598.js" crossorigin="anonymous"></script>
+</body>
+</html>
